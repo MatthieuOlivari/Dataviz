@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+    
+    // on charge le SVG
+    $.get('image.svg', function(data) { 
+        $(document.body).append(data.documentElement);
+        init(); // on lance la fonction init() présente en dessous;
+    });
+
+    
+
+</script>
+
+<body>
+</body>
+<script>
+  function init() {
+      // on définit les interactions.
+      // les élements sont identifiable par le nom du calque Illustrator
+	  
+			$('#bank').hide();
+			$('#bouton2').hide();
+			$('#bouton3').hide();
+			$('#bouton4').hide();
+			$('#bank1').hide();
+			$('#bank2').hide();
+			$('#bouton6').hide();
+			$('#bouton5').hide();
+			$('#Harbor2').hide();
+			$('#harbor1').hide();
+			$('#harbor').hide();
+			
+		
+	  
+		$('#bouton1').click(             // au clic sur Btn2
+			function() {
+				$('#ville').hide();
+				$('#bouton1').hide();
+				$('#bouton').hide();
+				$('#bank').show();
+				$('#bouton2').show();
+				$('#bouton3').show();
+				$('#bouton4').show();
+				$('#bank1').hide();
+				$('#bank2').hide();
+				$('#bouton6').hide();
+				$('#bouton5').hide();
+				$('#harbor2').hide();
+				$('#harbor1').hide();
+				$('#harbor').hide();
+			}
+		);
+		
+		$('#bouton3').click(             // au clic sur Btn2
+			function() {
+				$('#ville').hide();
+				$('#bouton').hide();
+				$('#bouton1').hide();
+				$('#bank').hide();
+				$('#bouton2').show();
+				$('#bouton3').show();
+				$('#bouton4').show();
+				$('#bank1').show();
+				$('#bank2').hide();
+				$('#bouton6').hide();
+			$('#bouton5').hide();
+			$('#harbor2').hide();
+			$('#harbor1').hide();
+			$('#harbor').hide();
+			}
+		);
+		
+		$('#bouton2').click(             // au clic sur Btn2
+			function() {
+				$('#ville').hide();
+				$('#bouton').hide();
+				$('#bouton1').hide();
+				$('#bank').hide();
+				$('#bouton2').show();
+				$('#bouton3').show();
+				$('#bouton4').show();
+				$('#bank1').hide();
+				$('#bank2').show();
+				$('#bouton6').hide();
+			$('#bouton5').hide();
+			$('#harbor2').hide();
+			$('#harbor1').hide();
+			$('#harbor').hide();
+			}
+		);
+		
+		$('#bouton4').click(             // au clic sur Btn2
+			function() {
+				$('#ville').hide();
+				$('#bouton').hide();
+				$('#bouton1').hide();
+				$('#bank').hide();
+				$('#bouton2').hide();
+				$('#bouton3').hide();
+				$('#bouton4').hide();
+				$('#bank1').hide();
+				$('#bank2').hide();
+				$('#bouton6').show();
+			$('#bouton5').show();
+			$('#Harbor2').hide();
+			$('#harbor1').hide();
+			$('#harbor').show();
+			}
+		);
+		
+		$('#bouton6').click(             // au clic sur Btn2
+			function() {
+				$('#ville').hide();
+				$('#bouton').hide();
+				$('#bouton1').hide();
+				$('#bank').hide();
+				$('#bouton2').hide();
+				$('#bouton3').hide();
+				$('#bouton4').hide();
+				$('#bank1').hide();
+				$('#bank2').hide();
+				$('#bouton6').show();
+			$('#bouton5').show();
+			$('#Harbor2').show();
+			$('#harbor1').hide();
+			$('#harbor').hide();
+			}
+		);
+		
+		$('#bouton5').click(             // au clic sur Btn2
+			function() {
+				$('#ville').hide();
+				$('#bouton1').hide();
+				$('#bouton').hide();
+				$('#bank').hide();
+				$('#bouton2').hide();
+				$('#bouton3').hide();
+				$('#bouton4').hide();
+				$('#bank1').hide();
+				$('#bank2').hide();
+				$('#bouton6').show();
+			$('#bouton5').show();
+			$('#Harbor2').hide();
+			$('#harbor1').show();
+			$('#harbor').hide();
+			}
+		);
+		$('#bouton').click(             // au clic sur Btn3
+			function() {
+				window.open('https://www.kickstarter.com/projects/806316071/batmantm-gotham-city-chronicles');
+			}
+		);
+  };
+  </script>
+    
+</html>
